@@ -73,7 +73,6 @@ def writeData(datalist, subID):
     # create a csvfile for each subject and name it: Sub[subID].csv
     # add a header ('SubjectID','StimulusType','response','RT') to the csvfile
     # and write each entry of datalist to a single row
-    # write datalist into the csv file, one entry per row
     with open('Data/Sub{}.csv'.format(subID), 'w') as datacsv:
         writer = csv.writer(datacsv)
         # add header
